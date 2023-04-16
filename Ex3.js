@@ -1,0 +1,10 @@
+const receber= require('prompt-sync')({sigint:true})
+var nota1,nota2,nota3,peso1,peso2,peso3,media=0,
+nota1=parseInt(receber("Digite o valor da nota 1:"))
+peso1=parseInt(receber("Digite o valor do peso da nota 1:"))
+nota2=parseInt(receber("Digite o valor da nota 2:"))
+peso2=parseInt(receber("Digite o valor do peso da nota 2:"))
+nota3=parseInt(receber("Digite o valor da nota 3:"))
+peso3=parseInt(receber("Digite o valor do peso da nota 3:"))
+media=((nota1*peso1)+(nota2*peso2)+(nota3*peso3))/(peso1+peso2+peso3)
+console.log("A media ponderada e:", media)
